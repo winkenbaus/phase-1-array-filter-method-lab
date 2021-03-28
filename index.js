@@ -5,6 +5,6 @@ function fuzzyMatch(drivers, letters){
     return drivers.filter(driver => driver.indexOf(letters) == 0)
 }
 function matchName(drivers, name){
-    return drivers.filter(matches => matches.indexOf(name))
+    return drivers.filter(driver => driver.name === name)
 }
 
